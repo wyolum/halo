@@ -633,12 +633,6 @@ $EndComp
 Wire Wire Line
 	1725 1100 1800 1100
 Wire Wire Line
-	1725 1300 2325 1300
-Wire Wire Line
-	1725 1400 2125 1400
-Wire Wire Line
-	2125 1400 2125 2300
-Wire Wire Line
 	1725 1600 1800 1600
 Wire Wire Line
 	1800 1600 1800 1700
@@ -655,29 +649,25 @@ Connection ~ 1800 1900
 $Comp
 L halo:R2 R5
 U 1 1 5FB69F7B
-P 2125 2550
-F 0 "R5" H 2175 2350 50  0000 C CNN
-F 1 "5k11" V 2125 2550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 2125 2550 60  0001 C CNN
-F 3 "" H 2125 2550 60  0001 C CNN
-	1    2125 2550
+P 2125 2600
+F 0 "R5" H 2175 2400 50  0000 C CNN
+F 1 "5k11" V 2125 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2125 2600 60  0001 C CNN
+F 3 "" H 2125 2600 60  0001 C CNN
+	1    2125 2600
 	1    0    0    -1  
 $EndComp
 $Comp
 L halo:R2 R6
 U 1 1 5FB6AA87
-P 2325 2550
-F 0 "R6" H 2375 2350 50  0000 C CNN
-F 1 "5k11" V 2325 2550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 2325 2550 60  0001 C CNN
-F 3 "" H 2325 2550 60  0001 C CNN
-	1    2325 2550
+P 2325 2600
+F 0 "R6" H 2375 2400 50  0000 C CNN
+F 1 "5k11" V 2325 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2325 2600 60  0001 C CNN
+F 3 "" H 2325 2600 60  0001 C CNN
+	1    2325 2600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2325 2800 2325 2875
-Wire Wire Line
-	2325 2875 2125 2875
 Wire Wire Line
 	825  2875 825  2600
 Wire Wire Line
@@ -685,11 +675,6 @@ Wire Wire Line
 Connection ~ 1125 2875
 Wire Wire Line
 	1125 2875 825  2875
-Wire Wire Line
-	2125 2800 2125 2875
-Connection ~ 2125 2875
-Wire Wire Line
-	2125 2875 1125 2875
 Text Label 1975 1100 2    50   ~ 0
 Vusb
 Text Label 1975 1600 2    50   ~ 0
@@ -977,14 +962,6 @@ Connection ~ 1800 1100
 Wire Wire Line
 	1800 1100 1975 1100
 Wire Wire Line
-	2325 1300 2325 2300
-Connection ~ 2325 1300
-Connection ~ 2125 1400
-Wire Wire Line
-	2125 1400 3325 1400
-Wire Wire Line
-	2325 1300 3325 1300
-Wire Wire Line
 	3050 1600 3050 1500
 Wire Wire Line
 	3050 1500 3325 1500
@@ -1007,20 +984,9 @@ Wire Wire Line
 Wire Wire Line
 	3200 1800 3325 1800
 Wire Wire Line
-	1725 2300 2125 2300
-Connection ~ 2125 2300
-Wire Wire Line
-	2125 2300 2325 2300
-Connection ~ 2325 2300
-Wire Wire Line
-	2325 2300 3200 2300
-Wire Wire Line
 	3325 1900 3250 1900
 Wire Wire Line
 	3250 1900 3250 2875
-Wire Wire Line
-	3250 2875 2325 2875
-Connection ~ 2325 2875
 $Comp
 L halo:I_O B3
 U 1 1 5FB6FA20
@@ -1353,4 +1319,32 @@ F 3 "~" H 1900 4975 50  0001 C CNN
 	1    1900 4975
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	1125 2875 2125 2875
+Wire Wire Line
+	2125 2850 2125 2875
+Connection ~ 2125 2875
+Wire Wire Line
+	2125 2875 2325 2875
+Wire Wire Line
+	2325 2850 2325 2875
+Connection ~ 2325 2875
+Wire Wire Line
+	2325 2875 3250 2875
+Wire Wire Line
+	1725 1400 2125 1400
+Wire Wire Line
+	1725 1300 2325 1300
+Wire Wire Line
+	1725 2300 3200 2300
+Wire Wire Line
+	2325 2350 2325 1300
+Connection ~ 2325 1300
+Wire Wire Line
+	2325 1300 3325 1300
+Wire Wire Line
+	2125 2350 2125 1400
+Connection ~ 2125 1400
+Wire Wire Line
+	2125 1400 3325 1400
 $EndSCHEMATC
