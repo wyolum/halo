@@ -1,4 +1,4 @@
-18993997166083810
+18979197584450810
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -82684,12 +82684,12 @@ varistor SIOV
 2
 2
 halo
-ADXL345
+AMPHENOL_12401610E4#2A
 
 
 0
-14
-14
+28
+25
 halo
 BarrelJack_CUI_PJ-036AH-SMT_Horizontal
 Surface-mount DC Barrel Jack, http://www.cui.com/product/resource/pj-036ah-smt.pdf
@@ -82726,47 +82726,12 @@ Diode Universal SMB(DO-214AA) SMC (DO-214AB) Handsoldering
 2
 2
 halo
-Diode-EMD2
-Diode SMB Handsoldering
-Diode SMB Handsoldering
-0
-2
-2
-halo
 Header_3x2_ISP
 Connecteur 6 pins
 CONN DEV
 0
 6
 6
-halo
-Inductor_LQH3NPN
-Neosid, Inductor, SMs42, Festinduktivitaet, SMD, magneticaly shielded,
-Neosid, Inductor, SMs42, Festinduktivitaet, SMD, magneticaly shielded,
-0
-2
-2
-halo
-Inductor_NLCV32
-Neosid, Inductor, SMs42, Festinduktivitaet, SMD, magneticaly shielded,
-Neosid, Inductor, SMs42, Festinduktivitaet, SMD, magneticaly shielded,
-0
-2
-2
-halo
-LED-5MM
-LED 5mm - Lead pitch 100mil (2,54mm)
-LED led 5mm 5MM 100mil 2,54mm
-0
-2
-2
-halo
-LED-0805
-LED 0805 smd package
-LED 0805 SMD
-0
-2
-2
 halo
 LED_0805_2012Metric
 LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator
@@ -82788,13 +82753,6 @@ mounting hole 3.2mm m3
 0
 9
 1
-halo
-PIN_ARRAY-6X1
-Connecteur 6 pins
-CONN DEV
-0
-6
-6
 halo
 PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left
 surface-mounted straight pin header, 1x02, 2.54mm pitch, single row, style 1 (pin 1 left)
@@ -82873,6 +82831,13 @@ SOT23-5
 6
 6
 halo
+SW_EVQ-9P701P
+
+
+0
+6
+6
+halo
 SW_Push_1P1T_NO_6x6mm_H9.5mm
 tactile push button, 6x6mm e.g. PTS645xx series, height=9.5mm
 tact sw push 6mm smd
@@ -82894,27 +82859,6 @@ QFP 0.8
 32
 32
 halo
-TQFP32
-
-
-0
-32
-32
-halo
-USB_B_Micro
-
-
-0
-11
-11
-halo
-USB_B_Micro_seeed
-
-
-0
-9
-9
-halo
 USB_C_Receptacle_Amphenol_12401610E4-2A_CircularHoles
 USB TYPE C, RA RCPT PCB, SMT, https://www.amphenolcanada.com/StockAvailabilityPrice.aspx?From=&PartNum=12401610E4%7e2A
 USB C Type-C Receptacle SMD
@@ -82928,13 +82872,6 @@ Xtal_SMD4
 0
 4
 3
-halo
-batt_clip
-
-
-0
-3
-1
 halo
 breakout
 
@@ -82950,33 +82887,19 @@ breakout_smd
 1
 1
 halo
-c_0805
-SMT capacitor, 0805
+logo_halo
+
 
 0
-2
-2
-halo
-pin_socket_2
-Pin strip 2pin
-CONN DEV
 0
-2
-2
-halo
-pin_strip_2
-Pin strip 2pin
-CONN DEV
 0
-2
-2
 halo
-r_0805
-SMT resistor, 0805
+logo_wyolum
+
 
 0
-2
-2
+0
+0
 halo
 screw_3mm
 vite 2,5mm
