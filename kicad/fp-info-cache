@@ -1,4 +1,4 @@
-18979197584450810
+19000054434575810
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -82719,6 +82719,20 @@ capacitor
 2
 2
 halo
+Crystal_SMD_3225-4Pin_3.2x2.5mm
+SMD Crystal SERIES SMD3225/4 http://www.txccrystal.com/images/pdf/7m-accuracy.pdf, 3.2x2.5mm^2 package
+SMD SMT crystal
+0
+4
+3
+halo
+D_SMB
+Diode SMB (DO-214AA)
+Diode SMB (DO-214AA)
+0
+2
+2
+halo
 D_SMB-SMC_Universal_Handsoldering
 Diode, Universal, SMB(DO-214AA) or SMC (DO-214AB), Handsoldering,
 Diode Universal SMB(DO-214AA) SMC (DO-214AB) Handsoldering 
@@ -82768,12 +82782,26 @@ Surface mounted pin header SMD 1x06 2.54mm single row style1 pin1 left
 6
 6
 halo
+PinHeader_2x02_P2.54mm_Vertical_SMD
+surface-mounted straight pin header, 2x02, 2.54mm pitch, double rows
+Surface mounted pin header SMD 2x02 2.54mm double row
+0
+4
+4
+halo
 PinHeader_2x03_P2.54mm_Vertical_SMD
 surface-mounted straight pin header, 2x03, 2.54mm pitch, double rows
 Surface mounted pin header SMD 2x03 2.54mm double row
 0
 6
 6
+halo
+PinHeader_2x04_P2.54mm_Vertical_SMD
+surface-mounted straight pin header, 2x04, 2.54mm pitch, double rows
+Surface mounted pin header SMD 2x04 2.54mm double row
+0
+8
+8
 halo
 PinSocket_1x04_P2.54mm_Vertical_SMD_Pin1Left
 surface-mounted straight socket strip, 1x04, 2.54mm pitch, single row, style 1 (pin 1 left) (https://cdn.harwin.com/pdfs/M20-786.pdf), script generated
@@ -82866,7 +82894,28 @@ USB C Type-C Receptacle SMD
 28
 25
 halo
+USB_C_XKB_U262-241N-4BV64
+
+
+0
+30
+25
+halo
+USB_C_XKB_U262-241N-4BV64_v2
+
+
+0
+30
+25
+halo
 Xtal_SMD4
+
+
+0
+4
+3
+halo
+barrel_jack_DC-005-5A-2_5-SMT
 
 
 0
@@ -82886,6 +82935,34 @@ breakout_smd
 0
 1
 1
+halo
+logo_KiCad_12mm_SilkScreen
+KiCad Logo
+Logo KiCad
+0
+0
+0
+halo
+logo_KiCad_20mm_SilkScreen
+KiCad Logo
+Logo KiCad
+0
+0
+0
+halo
+logo_OSHW_11.4x12mm_SilkScreen
+Open Source Hardware Logo
+Logo OSHW
+0
+0
+0
+halo
+logo_OSHW_19x20mm_SilkScreen
+Open Source Hardware Logo
+Logo OSHW
+0
+0
+0
 halo
 logo_halo
 
@@ -82914,3 +82991,17 @@ SMT capacitor, 0805
 0
 3
 3
+halo
+sparkfun_apds_9960
+
+
+0
+6
+6
+halo
+sparkfun_apds_9960_smd
+
+
+0
+6
+4

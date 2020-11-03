@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP Barrel_Jack_Switch
+D DC Barrel Jack with an internal switch
+K DC power barrel jack connector
+F ~
+$ENDCMP
+#
 $CMP Conn_01x08
 D Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
@@ -40,6 +46,12 @@ $CMP LM1117-5.0
 D 800mA Low-Dropout Linear Regulator, 5.0V fixed output, TO-220/TO-252/TO-263/SOT-223
 K linear regulator ldo fixed positive
 F http://www.ti.com/lit/ds/symlink/lm1117.pdf
+$ENDCMP
+#
+$CMP SW_Push_Dual
+D Push button switch, generic, symbol, four pins
+K switch normally-open pushbutton push-button
+F ~
 $ENDCMP
 #
 $CMP TLV1117-15
