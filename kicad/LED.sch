@@ -707,9 +707,9 @@ Text Label 975  775  0    50   ~ 10
 Text Label 975  1575 0    50   ~ 10
 GND
 Text Label 975  1175 0    50   ~ 10
-D5~~_DAT
+DAT
 Text Label 4175 7175 2    50   ~ 10
-D5~~_DAT_OUT
+DAT_OUT
 Text Label 4175 6775 2    50   ~ 10
 5V
 Text Label 4175 7575 2    50   ~ 10
@@ -717,15 +717,15 @@ GND
 Text HLabel 975  775  0    50   Input ~ 10
 5V
 Text HLabel 975  1175 0    50   Input ~ 10
-D5~~_DAT
+DAT
 Text HLabel 975  1575 0    50   Input ~ 10
 GND
 Text HLabel 975  1350 0    50   Input ~ 10
-D6~~_CLK
+CLK
 Wire Wire Line
 	975  1350 1375 1350
 Text Label 1000 1350 0    50   ~ 10
-D6~~_CLK
+CLK
 $Comp
 L halo:I_O B20
 U 1 1 5FF0D020
@@ -738,14 +738,14 @@ F 3 "" H 1525 1350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:CONN_4 P4
+L halo:CONN_01x04 P4
 U 1 1 5FF42D78
-P 4575 7225
-F 0 "P4" H 4475 7475 50  0000 L CNN
-F 1 "LED_OUT" H 4450 6975 50  0000 L CNN
-F 2 "halo:PinSocket_1x04_P2.54mm_Vertical_SMD_Pin1Left" H 4575 7225 60  0001 C CNN
-F 3 "" H 4575 7225 60  0000 C CNN
-	1    4575 7225
+P 4475 7225
+F 0 "P4" H 4375 7475 50  0000 L CNN
+F 1 "LED_OUT" V 4550 7075 50  0000 L CNB
+F 2 "halo:PinSocket_1x04_P2.54mm_Vertical_SMD_Pin1Left" H 4475 7225 60  0001 C CNN
+F 3 "" H 4475 7225 60  0000 C CNN
+	1    4475 7225
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -758,7 +758,6 @@ Wire Wire Line
 	4225 7375 4175 7375
 Wire Wire Line
 	4175 7375 4175 7575
-NoConn ~ 4225 7275
 $Comp
 L halo:C_NPOL C11
 U 1 1 5F9F5FA3
@@ -953,4 +952,17 @@ Text Label 2175 4775 0    50   ~ 10
 5V
 Text Label 2175 5575 0    50   ~ 10
 GND
+$Comp
+L halo:I_O B21
+U 1 1 605C58B0
+P 4000 7275
+F 0 "B21" H 4060 7275 40  0000 L CNN
+F 1 "I_O" H 4000 7330 30  0001 C CNN
+F 2 "halo:breakout_smd" H 4000 7275 60  0001 C CNN
+F 3 "" H 4000 7275 60  0000 C CNN
+	1    4000 7275
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4225 7275 4150 7275
 $EndSCHEMATC

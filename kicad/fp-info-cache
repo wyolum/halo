@@ -1,4 +1,4 @@
-19000054434575810
+19001659954319810
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -82740,6 +82740,13 @@ Diode Universal SMB(DO-214AA) SMC (DO-214AB) Handsoldering
 2
 2
 halo
+GCT_USB4110-GF-A
+
+
+0
+16
+16
+halo
 Header_3x2_ISP
 Connecteur 6 pins
 CONN DEV
@@ -82779,7 +82786,7 @@ PinHeader_1x06_P2.54mm_Vertical_SMD_Pin1Left
 surface-mounted straight pin header, 1x06, 2.54mm pitch, single row, style 1 (pin 1 left)
 Surface mounted pin header SMD 1x06 2.54mm single row style1 pin1 left
 0
-6
+12
 6
 halo
 PinHeader_2x02_P2.54mm_Vertical_SMD
@@ -82807,14 +82814,14 @@ PinSocket_1x04_P2.54mm_Vertical_SMD_Pin1Left
 surface-mounted straight socket strip, 1x04, 2.54mm pitch, single row, style 1 (pin 1 left) (https://cdn.harwin.com/pdfs/M20-786.pdf), script generated
 Surface mounted socket strip SMD 1x04 2.54mm single row style1 pin1 left
 0
-4
+8
 4
 halo
 PinSocket_1x08_P2.54mm_Vertical_SMD_Pin1Left
 surface-mounted straight socket strip, 1x08, 2.54mm pitch, single row, style 1 (pin 1 left) (https://cdn.harwin.com/pdfs/M20-786.pdf), script generated
 Surface mounted socket strip SMD 1x08 2.54mm single row style1 pin1 left
 0
-8
+16
 8
 halo
 R_0805_2012Metric
@@ -83003,5 +83010,5 @@ sparkfun_apds_9960_smd
 
 
 0
+12
 6
-4
