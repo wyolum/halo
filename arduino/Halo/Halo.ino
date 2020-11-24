@@ -1,4 +1,6 @@
-#include "FastLED.h"
+#include <Wire.h>
+#include <FastLED.h>
+#include <SparkFun_APDS9960.h>
 
 FASTLED_USING_NAMESPACE
 // Intended target: Arduino Nano with ATMEGA 328
@@ -16,22 +18,120 @@ FASTLED_USING_NAMESPACE
 #warning "Requires FastLED 3.1 or later; check github for latest code."
 #endif
 
-#define DATA_PIN    A5
+#define DATA_PIN    5
 #define LED_TYPE    WS2812
 //#define DATA_PIN    20
 //#define CLK_PIN   19
 //#define LED_TYPE    APA102
 
 #define COLOR_ORDER GRB
-#define NUM_LEDS    256
+#define NUM_LEDS     32
+#define BUTTON_PIN    4
 CRGB leds[NUM_LEDS];
 
-#define BRIGHTNESS          16
+#define BRIGHTNESS          255
 #define FRAMES_PER_SECOND  120
+
+uint32_t last_press = 0;
+#define DEBOUNCE  200
+#define LONG_PRESS_DURATION 3000
+#define TIMEOUT (10L * 60L * 1000L)
+
+int8_t gCurrentPatternNumber = 0; // Index number of which pattern is current
+int8_t gLastPatternNumber = 0; // Index number of which pattern is current
+uint8_t gHue = 0; // rotating "base color" used by many of the patterns
+
+const int    APDS_UP = 1;
+const int  APDS_DOWN = 2;
+const int  APDS_LEFT = 3;
+const int APDS_RIGHT = 4;
+const int  APDS_NEAR = 5;
+const int   APDS_FAR = 6;
+const int  APDS_NONE = 7;
+
+SparkFun_APDS9960 g_apds = SparkFun_APDS9960();
+
+typedef void (*SimplePatternList[])();
+void blue();
+void green();
+void red();
+void white();
+void rainbow();
+void rainbowWithGlitter();
+void sinelon();
+void juggle();
+void bpm();
+void pattern_cycle();
+void nextPattern();
+void off();
+void setOff();
+void addGlitter(fract8 chanceOfGlitter);
+void apds_setup();
+
+SimplePatternList gPatterns = {blue, green, red, white,
+			       rainbow, rainbowWithGlitter, sinelon, juggle, bpm,
+			       pattern_cycle};
+
+
+uint32_t last_interaction = 0;
+
+void interact(){
+  int gesture = handleGesture();
+  if(gesture > 0){
+    last_interaction = millis();
+  }
+  if(gesture == APDS_LEFT){
+    nextPattern();
+    Serial.println("Next");
+  }
+  if(gesture == APDS_RIGHT){
+    prevPattern();
+    Serial.println("Prev");
+  }
+  if(millis() - last_press > DEBOUNCE && digitalRead(BUTTON_PIN) == LOW){
+    nextPattern();
+    gPatterns[gCurrentPatternNumber]();
+    FastLED.show();
+    uint32_t press_start = millis();
+    uint32_t press_dur = millis() - press_start;
+    uint32_t attempt = 0;
+    while(digitalRead(BUTTON_PIN) == LOW && press_dur < LONG_PRESS_DURATION){
+      if(attempt == 0){
+	Serial.println("Wait for relase...");
+      }
+      attempt++;
+      press_dur = millis() - press_start;
+    }
+    if(press_dur >= LONG_PRESS_DURATION){
+      setOff();
+      off();
+      FastLED.show();
+      Serial.println("Long Press");
+      while(digitalRead(BUTTON_PIN) == LOW){
+	// insure release
+      }
+    }
+    else{
+      Serial.println("normal press");
+    }
+    last_press = millis();
+    Serial.println("released");
+  }
+  if(millis() - last_interaction > TIMEOUT){
+    gCurrentPatternNumber++; // pre-increment (like button long press does)
+    setOff();
+    off();
+    FastLED.show();
+  }
+  //Serial.print(millis() - last_interaction);
+  //Serial.print(" ");
+  //Serial.println(TIMEOUT);
+}
 
 void setup() {
   Serial.begin(115200);
-  delay(3000); // 3 second delay for recovery
+  delay(300); // 3 second delay for recovery
+  Serial.println("WyoLum.com:: Halo");
   
   // tell FastLED about the LED strip configuration
   FastLED.addLeds<LED_TYPE,DATA_PIN,COLOR_ORDER>(leds, NUM_LEDS).
@@ -39,25 +139,20 @@ void setup() {
 
   // set master brightness control
   FastLED.setBrightness(BRIGHTNESS);
-  pinMode(A0, INPUT_PULLUP);
-  pinMode(A1, OUTPUT);
-  digitalWrite(A1, LOW);
+  pinMode(BUTTON_PIN, INPUT);
+
+  apds_setup();  
 }
 
 
 // List of patterns to cycle through.  Each is defined as a separate function below.
-typedef void (*SimplePatternList[])();
-SimplePatternList gPatterns = {rainbow, rainbowWithGlitter, confetti, sinelon, juggle, bpm };
 
-uint8_t gCurrentPatternNumber = 0; // Index number of which pattern is current
-uint8_t gHue = 0; // rotating "base color" used by many of the patterns
-
-uint32_t last_press = 0;
-#define DEBOUNCE  200
 void loop()
 {
   // Call the current pattern function once, updating the 'leds' array
-  gPatterns[gCurrentPatternNumber]();
+  if(gCurrentPatternNumber >= 0){
+    gPatterns[gCurrentPatternNumber]();
+  }
 
   // send the 'leds' array out to the actual LED strip
   FastLED.show();  
@@ -67,27 +162,104 @@ void loop()
   // do some periodic updates
   EVERY_N_MILLISECONDS( 20 ) { gHue++; } // slowly cycle the "base color" through the rainbow
   //EVERY_N_SECONDS( 10 ) { nextPattern(); } // change patterns periodically
-  if(millis() - last_press > DEBOUNCE && digitalRead(A0) == LOW){
-    last_press = millis();
-    nextPattern();
-  }
+  interact();
 }
 
 #define ARRAY_SIZE(A) (sizeof(A) / sizeof((A)[0]))
 
-void nextPattern()
-{
-  // add one to the current pattern number, and wrap around at the end
-  gCurrentPatternNumber = (gCurrentPatternNumber + 1) % ARRAY_SIZE( gPatterns);
+void setOff(){
+  gLastPatternNumber = (gCurrentPatternNumber - 1) % (ARRAY_SIZE(gPatterns));
+  gCurrentPatternNumber = -1;
+}
+void nextPattern(){
+  if(gCurrentPatternNumber < 0){
+    gCurrentPatternNumber = gLastPatternNumber;
+  }
+  else{
+    // add one to the current pattern number, and wrap around at the end
+    gCurrentPatternNumber = (gCurrentPatternNumber + 1) % ARRAY_SIZE( gPatterns);
+  }
+}
+
+void prevPattern(){
+  if(gCurrentPatternNumber < 0){
+    gCurrentPatternNumber = gLastPatternNumber;
+  }
+  else{
+    // add one to the current pattern number, and wrap around at the end
+    gCurrentPatternNumber = (gCurrentPatternNumber - 1) % ARRAY_SIZE( gPatterns);
+  }
 }
 
 int pattern_cycle_num = 0;
+
+
+/// patterns
+int hue = 0;
+int divisor = 30;
+#define MIN_BRIGHTNESS 8
+#define MAX_BRIGHTNESS 255
+void breath () {
+ float breath = (exp(sin(millis()/5000.0*PI)) - 0.36787944)*108.0;
+ breath = map(breath, 0, 255, MIN_BRIGHTNESS, MAX_BRIGHTNESS);
+ FastLED.setBrightness(breath);
+ fill_rainbow(leds, NUM_LEDS, (hue++/divisor));
+ if(hue == (255 * divisor)) {
+ 	hue = 0;
+ }
+ delay(5);
+}
+
 void pattern_cycle(){
   gPatterns[pattern_cycle_num]();
   EVERY_N_SECONDS( 10 ) {
-    pattern_cycle_num += 1;
-    pattern_cycle_num %= ARRAY_SIZE(gPatterns);
+    pattern_cycle_num += 1; // last two are cycle and off
+    pattern_cycle_num %= ARRAY_SIZE(gPatterns) - 2;
   } // change patterns periodically
+}
+
+void off(){
+  for(int i = 0; i < NUM_LEDS; i++){
+    leds[i] = CRGB::Black;
+    FastLED.show();
+  }
+}
+
+void mona(){
+  for(int i = 0; i < NUM_LEDS; i++){
+    leds[i] = CRGB::Black;
+  }
+  for(int i = 8; i < 16; i++){
+    leds[i] = CRGB::Red;
+  }
+  for(int i = 16; i < 24; i++){
+    leds[i] = CRGB::Green/8;
+  }
+  FastLED.show();
+}
+void blue(){
+  for(int i = 0; i < NUM_LEDS; i++){
+    leds[i] = CRGB::Blue;
+    FastLED.show();
+  }
+}
+void red(){
+  for(int i = 0; i < NUM_LEDS; i++){
+    leds[i] = CRGB::Red;
+    FastLED.show();
+  }
+}
+void white(){
+  for(int i = 0; i < NUM_LEDS; i++){
+    leds[i] = CRGB::White;
+    FastLED.show();
+  }
+}
+void green(){
+  for(int i = 0; i < NUM_LEDS; i++){
+    leds[i] = CRGB::Green;
+    FastLED.show();
+  }
 }
 void rainbow() 
 {
@@ -107,14 +279,6 @@ void addGlitter( fract8 chanceOfGlitter)
   if( random8() < chanceOfGlitter) {
     leds[ random16(NUM_LEDS) ] += CRGB::White;
   }
-}
-
-void confetti() 
-{
-  // random colored speckles that blink in and fade smoothly
-  fadeToBlackBy( leds, NUM_LEDS, 10);
-  int pos = random16(NUM_LEDS);
-  leds[pos] += CHSV( gHue + random8(64), 200, 255);
 }
 
 void sinelon()
@@ -146,3 +310,49 @@ void juggle() {
   }
 }
 
+///////////////// gesture sensor
+void apds_setup(){
+  // Initialize APDS-9960 (configure I2C and initial values)
+  if(g_apds.init() ) {
+    Serial.println(F("APDS-9960 initialization complete"));
+  } else {
+    Serial.println(F("Something went wrong during APDS-9960 init!"));
+  }
+  
+  // Start running the APDS-9960 gesture sensor engine
+  if (g_apds.enableGestureSensor(true) ) {
+    Serial.println(F("Gesture sensor is now running"));
+  } else {
+    Serial.println(F("Something went wrong during gesture sensor init!"));
+  }
+}
+int handleGesture() {
+  int out = 0;
+  if ( g_apds.isGestureAvailable() ) {
+    switch ( g_apds.readGesture() ) {
+    case DIR_UP:
+      out = APDS_UP;
+      break;
+    case DIR_DOWN:
+      out = APDS_DOWN;
+      break;
+    case DIR_LEFT:
+      out = APDS_LEFT;
+      break;
+    case DIR_RIGHT:
+      out = APDS_RIGHT;
+      break;
+    case DIR_NEAR:
+      out = APDS_NEAR;
+      Serial.println("Near");
+      break;
+    case DIR_FAR:
+      out = APDS_FAR;
+      Serial.println("Far");
+      break;
+    default:
+      out = APDS_NONE;
+    }
+  }
+  return out;
+}
