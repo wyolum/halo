@@ -91,7 +91,7 @@ void interact(){
   if(millis() - last_press > DEBOUNCE && digitalRead(BUTTON_PIN) == LOW){
     nextPattern();
     gPatterns[gCurrentPatternNumber]();
-    FastLED.show();
+    my_show();
     uint32_t press_start = millis();
     uint32_t press_dur = millis() - press_start;
     uint32_t attempt = 0;
@@ -105,7 +105,7 @@ void interact(){
     if(press_dur >= LONG_PRESS_DURATION){
       setOff();
       off();
-      FastLED.show();
+      my_show();
       Serial.println("Long Press");
       while(digitalRead(BUTTON_PIN) == LOW){
 	// insure release
@@ -121,7 +121,7 @@ void interact(){
     gCurrentPatternNumber++; // pre-increment (like button long press does)
     setOff();
     off();
-    FastLED.show();
+    my_show();
   }
   //Serial.print(millis() - last_interaction);
   //Serial.print(" ");
@@ -145,8 +145,22 @@ void setup() {
 }
 
 
-// List of patterns to cycle through.  Each is defined as a separate function below.
+void amp_profile(){
+  return;
+  int i;
+  CHSV hsv;
+  for(i = 0; i < NUM_LEDS; i++){ // bright in the middle fade to sides
+    hsv = rgb2hsv_approximate(leds[i]);
+    leds[i] = CHSV(hsv.hue, hsv.saturation, 127 + 128 * cos((i - NUM_LEDS/2) * 2 * PI / (.7 * NUM_LEDS)));
+  }
+}
 
+void my_show(){
+  // consolidate all show activities
+  amp_profile();
+  FastLED.show();
+}
+// List of patterns to cycle through.  Each is defined as a separate function below.
 void loop()
 {
   // Call the current pattern function once, updating the 'leds' array
@@ -154,8 +168,10 @@ void loop()
     gPatterns[gCurrentPatternNumber]();
   }
 
+  amp_profile();
+  
   // send the 'leds' array out to the actual LED strip
-  FastLED.show();  
+  my_show();  
   // insert a delay to keep the framerate modest
   FastLED.delay(1000/FRAMES_PER_SECOND); 
 
@@ -235,30 +251,25 @@ void mona(){
   for(int i = 16; i < 24; i++){
     leds[i] = CRGB::Green/8;
   }
-  FastLED.show();
 }
 void blue(){
   for(int i = 0; i < NUM_LEDS; i++){
     leds[i] = CRGB::Blue;
-    FastLED.show();
   }
 }
 void red(){
   for(int i = 0; i < NUM_LEDS; i++){
     leds[i] = CRGB::Red;
-    FastLED.show();
   }
 }
 void white(){
   for(int i = 0; i < NUM_LEDS; i++){
     leds[i] = CRGB::White;
-    FastLED.show();
   }
 }
 void green(){
   for(int i = 0; i < NUM_LEDS; i++){
     leds[i] = CRGB::Green;
-    FastLED.show();
   }
 }
 void rainbow() 
