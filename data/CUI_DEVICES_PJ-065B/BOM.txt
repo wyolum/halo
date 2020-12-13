@@ -1,0 +1,3 @@
+3DX_CUI_DEVICES_Supplier: CUI Devices
+3DX_CUI_DEVICES_Description: 2.5 x 5.7 mm, 5.0 A, Vertical, Panel Mount, Long Barrel, Dc Power Jack Connector
+3DX_CUI_DEVICES_Model Number: PJ-065B

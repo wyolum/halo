@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D37
 U 1 1 5FE70956
 P 2175 1175
-F 0 "D?" H 1975 1425 50  0000 L CNN
+F 0 "D37" H 1975 1425 50  0000 L CNN
 F 1 "WS2812B" H 2225 1425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 2225 875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2275 800 50  0001 L TNN
@@ -25,10 +25,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2275 800 50  0001 L
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D38
 U 1 1 5FE70957
 P 2975 1175
-F 0 "D?" H 2775 1425 50  0000 L CNN
+F 0 "D38" H 2775 1425 50  0000 L CNN
 F 1 "WS2812B" H 3025 1425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 3025 875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3075 800 50  0001 L TNN
@@ -36,10 +36,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3075 800 50  0001 L
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D39
 U 1 1 5FE70958
 P 3775 1175
-F 0 "D?" H 3575 1425 50  0000 L CNN
+F 0 "D39" H 3575 1425 50  0000 L CNN
 F 1 "WS2812B" H 3825 1425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 3825 875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3875 800 50  0001 L TNN
@@ -47,10 +47,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3875 800 50  0001 L
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D40
 U 1 1 5FE70959
 P 4575 1175
-F 0 "D?" H 4375 1425 50  0000 L CNN
+F 0 "D40" H 4375 1425 50  0000 L CNN
 F 1 "WS2812B" H 4625 1425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 4625 875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 4675 800 50  0001 L TNN
@@ -58,10 +58,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 4675 800 50  0001 L
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D41
 U 1 1 5FDA5D73
 P 5375 1175
-F 0 "D?" H 5175 1425 50  0000 L CNN
+F 0 "D41" H 5175 1425 50  0000 L CNN
 F 1 "WS2812B" H 5425 1425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 5425 875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 5475 800 50  0001 L TNN
@@ -69,10 +69,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 5475 800 50  0001 L
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D42
 U 1 1 5FDA5E23
 P 6175 1175
-F 0 "D?" H 5975 1425 50  0000 L CNN
+F 0 "D42" H 5975 1425 50  0000 L CNN
 F 1 "WS2812B" H 6225 1425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 6225 875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 6275 800 50  0001 L TNN
@@ -80,10 +80,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 6275 800 50  0001 L
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D43
 U 1 1 5FDA5E2D
 P 6975 1175
-F 0 "D?" H 6775 1425 50  0000 L CNN
+F 0 "D43" H 6775 1425 50  0000 L CNN
 F 1 "WS2812B" H 7025 1425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 7025 875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7075 800 50  0001 L TNN
@@ -91,10 +91,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7075 800 50  0001 L
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D44
 U 1 1 5FDA5E37
 P 7775 1175
-F 0 "D?" H 7575 1425 50  0000 L CNN
+F 0 "D44" H 7575 1425 50  0000 L CNN
 F 1 "WS2812B" H 7825 1425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 7825 875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7875 800 50  0001 L TNN
@@ -102,10 +102,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7875 800 50  0001 L
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D45
 U 1 1 5FDAD3A1
 P 8575 1175
-F 0 "D?" H 8375 1425 50  0000 L CNN
+F 0 "D45" H 8375 1425 50  0000 L CNN
 F 1 "WS2812B" H 8625 1425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 8625 875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 8675 800 50  0001 L TNN
@@ -113,10 +113,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 8675 800 50  0001 L
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D46
 U 1 1 5FE7095F
 P 9375 1175
-F 0 "D?" H 9175 1425 50  0000 L CNN
+F 0 "D46" H 9175 1425 50  0000 L CNN
 F 1 "WS2812B" H 9425 1425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 9425 875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 9475 800 50  0001 L TNN
@@ -245,10 +245,10 @@ Connection ~ 2175 1575
 Wire Wire Line
 	1875 1175 975  1175
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D47
 U 1 1 5FE70960
 P 2175 3175
-F 0 "D?" H 1975 3425 50  0000 L CNN
+F 0 "D47" H 1975 3425 50  0000 L CNN
 F 1 "WS2812B" H 2225 3425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 2225 2875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2275 2800 50  0001 L TNN
@@ -256,10 +256,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2275 2800 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D48
 U 1 1 5FE08608
 P 2975 3175
-F 0 "D?" H 2775 3425 50  0000 L CNN
+F 0 "D48" H 2775 3425 50  0000 L CNN
 F 1 "WS2812B" H 3025 3425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 3025 2875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3075 2800 50  0001 L TNN
@@ -267,10 +267,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3075 2800 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D49
 U 1 1 5FE08612
 P 3775 3175
-F 0 "D?" H 3575 3425 50  0000 L CNN
+F 0 "D49" H 3575 3425 50  0000 L CNN
 F 1 "WS2812B" H 3825 3425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 3825 2875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3875 2800 50  0001 L TNN
@@ -278,10 +278,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3875 2800 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D50
 U 1 1 5FE0861C
 P 4575 3175
-F 0 "D?" H 4375 3425 50  0000 L CNN
+F 0 "D50" H 4375 3425 50  0000 L CNN
 F 1 "WS2812B" H 4625 3425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 4625 2875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 4675 2800 50  0001 L TNN
@@ -289,10 +289,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 4675 2800 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D51
 U 1 1 5FE08626
 P 5375 3175
-F 0 "D?" H 5175 3425 50  0000 L CNN
+F 0 "D51" H 5175 3425 50  0000 L CNN
 F 1 "WS2812B" H 5425 3425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 5425 2875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 5475 2800 50  0001 L TNN
@@ -300,10 +300,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 5475 2800 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D52
 U 1 1 5FE08630
 P 6175 3175
-F 0 "D?" H 5975 3425 50  0000 L CNN
+F 0 "D52" H 5975 3425 50  0000 L CNN
 F 1 "WS2812B" H 6225 3425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 6225 2875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 6275 2800 50  0001 L TNN
@@ -311,10 +311,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 6275 2800 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D53
 U 1 1 5FE70966
 P 6975 3175
-F 0 "D?" H 6775 3425 50  0000 L CNN
+F 0 "D53" H 6775 3425 50  0000 L CNN
 F 1 "WS2812B" H 7025 3425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 7025 2875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7075 2800 50  0001 L TNN
@@ -322,10 +322,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7075 2800 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D54
 U 1 1 5FE70967
 P 7775 3175
-F 0 "D?" H 7575 3425 50  0000 L CNN
+F 0 "D54" H 7575 3425 50  0000 L CNN
 F 1 "WS2812B" H 7825 3425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 7825 2875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7875 2800 50  0001 L TNN
@@ -333,10 +333,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7875 2800 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D55
 U 1 1 5FE70968
 P 8575 3175
-F 0 "D?" H 8375 3425 50  0000 L CNN
+F 0 "D55" H 8375 3425 50  0000 L CNN
 F 1 "WS2812B" H 8625 3425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 8625 2875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 8675 2800 50  0001 L TNN
@@ -344,10 +344,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 8675 2800 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D56
 U 1 1 5FE70969
 P 9375 3175
-F 0 "D?" H 9175 3425 50  0000 L CNN
+F 0 "D56" H 9175 3425 50  0000 L CNN
 F 1 "WS2812B" H 9425 3425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 9425 2875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 9475 2800 50  0001 L TNN
@@ -470,10 +470,10 @@ Connection ~ 9375 3575
 Wire Wire Line
 	1875 3175 1725 3175
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D57
 U 1 1 5FE7096A
 P 2175 5175
-F 0 "D?" H 1975 5425 50  0000 L CNN
+F 0 "D57" H 1975 5425 50  0000 L CNN
 F 1 "WS2812B" H 2225 5425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 2225 4875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2275 4800 50  0001 L TNN
@@ -481,10 +481,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2275 4800 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D58
 U 1 1 5FE7096B
 P 2975 5175
-F 0 "D?" H 2775 5425 50  0000 L CNN
+F 0 "D58" H 2775 5425 50  0000 L CNN
 F 1 "WS2812B" H 3025 5425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 3025 4875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3075 4800 50  0001 L TNN
@@ -492,10 +492,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3075 4800 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D59
 U 1 1 5FE7096C
 P 3775 5175
-F 0 "D?" H 3575 5425 50  0000 L CNN
+F 0 "D59" H 3575 5425 50  0000 L CNN
 F 1 "WS2812B" H 3825 5425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 3825 4875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3875 4800 50  0001 L TNN
@@ -503,10 +503,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3875 4800 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D60
 U 1 1 5FE1EB70
 P 4575 5175
-F 0 "D?" H 4375 5425 50  0000 L CNN
+F 0 "D60" H 4375 5425 50  0000 L CNN
 F 1 "WS2812B" H 4625 5425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 4625 4875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 4675 4800 50  0001 L TNN
@@ -514,10 +514,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 4675 4800 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D61
 U 1 1 5FE1EB7A
 P 5375 5175
-F 0 "D?" H 5175 5425 50  0000 L CNN
+F 0 "D61" H 5175 5425 50  0000 L CNN
 F 1 "WS2812B" H 5425 5425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 5425 4875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 5475 4800 50  0001 L TNN
@@ -525,10 +525,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 5475 4800 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D62
 U 1 1 5FE1EB84
 P 6175 5175
-F 0 "D?" H 5975 5425 50  0000 L CNN
+F 0 "D62" H 5975 5425 50  0000 L CNN
 F 1 "WS2812B" H 6225 5425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 6225 4875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 6275 4800 50  0001 L TNN
@@ -536,10 +536,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 6275 4800 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D63
 U 1 1 5FE1EB8E
 P 6975 5175
-F 0 "D?" H 6775 5425 50  0000 L CNN
+F 0 "D63" H 6775 5425 50  0000 L CNN
 F 1 "WS2812B" H 7025 5425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 7025 4875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7075 4800 50  0001 L TNN
@@ -547,10 +547,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7075 4800 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D64
 U 1 1 5FE70971
 P 7775 5175
-F 0 "D?" H 7575 5425 50  0000 L CNN
+F 0 "D64" H 7575 5425 50  0000 L CNN
 F 1 "WS2812B" H 7825 5425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 7825 4875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7875 4800 50  0001 L TNN
@@ -558,10 +558,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7875 4800 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D65
 U 1 1 5FE70972
 P 8575 5175
-F 0 "D?" H 8375 5425 50  0000 L CNN
+F 0 "D65" H 8375 5425 50  0000 L CNN
 F 1 "WS2812B" H 8625 5425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 8625 4875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 8675 4800 50  0001 L TNN
@@ -569,10 +569,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 8675 4800 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D66
 U 1 1 5FE70973
 P 9375 5175
-F 0 "D?" H 9175 5425 50  0000 L CNN
+F 0 "D66" H 9175 5425 50  0000 L CNN
 F 1 "WS2812B" H 9425 5425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 9425 4875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 9475 4800 50  0001 L TNN
@@ -721,10 +721,10 @@ DAT_OUT1
 Text HLabel 975  1575 0    50   Input ~ 10
 GND
 $Comp
-L halo:CONN_01x04 P?
+L halo:CONN_01x04 P4
 U 1 1 5FF42D78
 P 4475 7225
-F 0 "P?" H 4375 7475 50  0000 L CNN
+F 0 "P4" H 4375 7475 50  0000 L CNN
 F 1 "LED_OUT" V 4550 7075 50  0000 L CNB
 F 2 "halo:PinSocket_1x04_P2.54mm_Vertical_SMD_Pin1Left" H 4475 7225 60  0001 C CNN
 F 3 "" H 4475 7225 60  0000 C CNN
@@ -742,10 +742,10 @@ Wire Wire Line
 Wire Wire Line
 	4175 7375 4175 7575
 $Comp
-L halo:C_NPOL C?
+L halo:C_NPOL C21
 U 1 1 5FE7094E
 P 5375 1875
-F 0 "C?" H 5503 1921 50  0000 L CNN
+F 0 "C21" H 5503 1921 50  0000 L CNN
 F 1 "100nF" H 5503 1830 50  0000 L CNN
 F 2 "halo:C_0805_2012Metric" H 5375 1900 60  0001 C CNN
 F 3 "" H 5375 1900 60  0000 C CNN
@@ -764,10 +764,10 @@ Connection ~ 5025 775
 Wire Wire Line
 	5025 775  4575 775 
 $Comp
-L halo:C_NPOL C?
+L halo:C_NPOL C22
 U 1 1 5FA66E67
 P 9375 1875
-F 0 "C?" H 9503 1921 50  0000 L CNN
+F 0 "C22" H 9503 1921 50  0000 L CNN
 F 1 "100nF" H 9503 1830 50  0000 L CNN
 F 2 "halo:C_0805_2012Metric" H 9375 1900 60  0001 C CNN
 F 3 "" H 9375 1900 60  0000 C CNN
@@ -786,10 +786,10 @@ Connection ~ 9000 775
 Wire Wire Line
 	9000 775  8575 775 
 $Comp
-L halo:C_NPOL C?
+L halo:C_NPOL C23
 U 1 1 5FA7D072
 P 5375 3875
-F 0 "C?" H 5503 3921 50  0000 L CNN
+F 0 "C23" H 5503 3921 50  0000 L CNN
 F 1 "100nF" H 5503 3830 50  0000 L CNN
 F 2 "halo:C_0805_2012Metric" H 5375 3900 60  0001 C CNN
 F 3 "" H 5375 3900 60  0000 C CNN
@@ -808,10 +808,10 @@ Connection ~ 5000 2775
 Wire Wire Line
 	5000 2775 4575 2775
 $Comp
-L halo:C_NPOL C?
+L halo:C_NPOL C24
 U 1 1 5FA92C3D
 P 9375 3875
-F 0 "C?" H 9503 3921 50  0000 L CNN
+F 0 "C24" H 9503 3921 50  0000 L CNN
 F 1 "100nF" H 9503 3830 50  0000 L CNN
 F 2 "halo:C_0805_2012Metric" H 9375 3900 60  0001 C CNN
 F 3 "" H 9375 3900 60  0000 C CNN
@@ -830,10 +830,10 @@ Connection ~ 9000 2775
 Wire Wire Line
 	9000 2775 8575 2775
 $Comp
-L halo:C_NPOL C?
+L halo:C_NPOL C25
 U 1 1 5FAAA6D4
 P 5375 5875
-F 0 "C?" H 5503 5921 50  0000 L CNN
+F 0 "C25" H 5503 5921 50  0000 L CNN
 F 1 "100nF" H 5503 5830 50  0000 L CNN
 F 2 "halo:C_0805_2012Metric" H 5375 5900 60  0001 C CNN
 F 3 "" H 5375 5900 60  0000 C CNN
@@ -852,10 +852,10 @@ Connection ~ 5025 4775
 Wire Wire Line
 	5025 4775 4575 4775
 $Comp
-L halo:C_NPOL C?
+L halo:C_NPOL C26
 U 1 1 5FAC11F8
 P 9375 5875
-F 0 "C?" H 9503 5921 50  0000 L CNN
+F 0 "C26" H 9503 5921 50  0000 L CNN
 F 1 "100nF" H 9503 5830 50  0000 L CNN
 F 2 "halo:C_0805_2012Metric" H 9375 5900 60  0001 C CNN
 F 3 "" H 9375 5900 60  0000 C CNN
@@ -874,10 +874,10 @@ Connection ~ 9000 4775
 Wire Wire Line
 	9000 4775 8575 4775
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D67
 U 1 1 5FA5B5E1
 P 2175 7175
-F 0 "D?" H 1975 7425 50  0000 L CNN
+F 0 "D67" H 1975 7425 50  0000 L CNN
 F 1 "WS2812B" H 2225 7425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 2225 6875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2275 6800 50  0001 L TNN
@@ -885,10 +885,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2275 6800 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L halo:WS2812B D?
+L halo:WS2812B D68
 U 1 1 5FA5B7F7
 P 2975 7175
-F 0 "D?" H 2775 7425 50  0000 L CNN
+F 0 "D68" H 2775 7425 50  0000 L CNN
 F 1 "WS2812B" H 3025 7425 50  0000 L CNN
 F 2 "halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 3025 6875 50  0001 L TNN
 F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3075 6800 50  0001 L TNN
@@ -936,10 +936,10 @@ Text Label 2175 4775 0    50   ~ 10
 Text Label 2175 5575 0    50   ~ 10
 GND
 $Comp
-L halo:I_O B?
+L halo:I_O B20
 U 1 1 605C58B0
 P 3650 7275
-F 0 "B?" H 3710 7275 40  0000 L CNN
+F 0 "B20" H 3710 7275 40  0000 L CNN
 F 1 "I_O" H 3650 7330 30  0001 C CNN
 F 2 "halo:breakout_smd" H 3650 7275 60  0001 C CNN
 F 3 "" H 3650 7275 60  0000 C CNN

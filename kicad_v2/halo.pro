@@ -1,4 +1,4 @@
-update=Tue Nov  3 19:16:37 2020
+update=Sat Dec 12 12:02:21 2020
 version=1
 last_client=kicad
 [general]
@@ -297,6 +297,28 @@ dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/5]
+Name=30 mils
+Clearance=0.2
+TrackWidth=0.762
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/6]
+Name=50 mils
+Clearance=0.2
+TrackWidth=1.27
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/7]
 Name=7 mils
 Clearance=0.127
 TrackWidth=0.1778

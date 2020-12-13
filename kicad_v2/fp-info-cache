@@ -1,4 +1,4 @@
-19004874934081810
+18995920228860810
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -82684,29 +82684,15 @@ varistor SIOV
 2
 2
 halo
-AMPHENOL_12401610E4#2A
-
-
-0
-28
-25
-halo
-BarrelJack_CUI_PJ-036AH-SMT_Horizontal
-Surface-mount DC Barrel Jack, http://www.cui.com/product/resource/pj-036ah-smt.pdf
-Power Jack SMT
-0
-3
-3
-halo
-CONN_JST-2_SMD
-
-JST
-0
-4
-2
-halo
 CP_Elec_4x5.8
 SMD capacitor, aluminum electrolytic, Panasonic, 4.0x5.8mm
+capacitor electrolytic
+0
+2
+2
+halo
+CP_Elec_6.3x7.7
+SMD capacitor, aluminum electrolytic, Nichicon, 6.3x7.7mm
 capacitor electrolytic
 0
 2
@@ -82740,26 +82726,12 @@ Diode SMB (DO-214AA)
 2
 2
 halo
-D_SMB-SMC_Universal_Handsoldering
-Diode, Universal, SMB(DO-214AA) or SMC (DO-214AB), Handsoldering,
-Diode Universal SMB(DO-214AA) SMC (DO-214AB) Handsoldering 
-0
-2
-2
-halo
 GCT_USB4110-GF-A
 
 
 0
 16
 16
-halo
-Header_3x2_ISP
-Connecteur 6 pins
-CONN DEV
-0
-6
-6
 halo
 LED_0805_2012Metric
 LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator
@@ -82845,41 +82817,6 @@ CMS SOT
 4
 3
 halo
-SOT23-5
-SOT23-5
-
-0
-5
-5
-halo
-SOT23-6
-SOT23-5
-
-0
-6
-6
-halo
-SOT23-6_LDO
-SOT23-5
-
-0
-6
-6
-halo
-SOT363
-SOT23-5
-
-0
-6
-6
-halo
-SW_EVQ-9P701P
-
-
-0
-6
-6
-halo
 SW_Push_1P1T_NO_6x6mm_H9.5mm
 tactile push button, 6x6mm e.g. PTS645xx series, height=9.5mm
 tact sw push 6mm smd
@@ -82929,13 +82866,6 @@ USB_C_XKB_U262-241N-4BV64_v2
 30
 25
 halo
-Xtal_SMD4
-
-
-0
-4
-3
-halo
 barrel_jack_DC-005-5A-2_5-SMT
 
 
@@ -82956,6 +82886,20 @@ breakout_smd
 0
 1
 1
+halo
+conn_barrel
+
+
+0
+3
+2
+halo
+generic_apds_9960_smd
+
+
+0
+10
+5
 halo
 logo_KiCad_12mm_SilkScreen
 KiCad Logo
@@ -82986,6 +82930,20 @@ Logo OSHW
 0
 halo
 logo_halo
+
+
+0
+0
+0
+halo
+logo_halo_10mm
+
+
+0
+0
+0
+halo
+logo_halo_13mm
 
 
 0
