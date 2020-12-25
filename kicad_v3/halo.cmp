@@ -1,0 +1,827 @@
+Cmp-Mod V01 Created by PcbNew   date = Mon Nov  2 20:34:58 2020
+
+BeginCmp
+TimeStamp = 5FA09260
+Path = /5FD196AC/5FDA109E
+Reference = D1;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5FA091EC
+Path = /5FD196AC/5FE1EBAC
+Reference = D32;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9FAF45
+Path = /5FB41D2E
+Reference = J2;
+ValeurCmp = USB_C_Receptacle_USB2.0;
+IdModule  = halo:AMPHENOL_12401610E4#2A;
+EndCmp
+
+BeginCmp
+TimeStamp = 5FA058C2
+Path = 
+Reference = G***;
+ValeurCmp = LOGO;
+IdModule  = halo:logo_halo;
+EndCmp
+
+BeginCmp
+TimeStamp = 5FA04659
+Path = 
+Reference = G***;
+ValeurCmp = LOGO;
+IdModule  = halo:logo_wyolum;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F04DD
+Path = /5415F8B1
+Reference = C9;
+ValeurCmp = 100n;
+IdModule  = halo:C_0805_2012Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F6334
+Path = /4DCA7BFC
+Reference = R1;
+ValeurCmp = 10k;
+IdModule  = halo:R_0805_2012Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9E64E9
+Path = /5FA65C4B
+Reference = P5;
+ValeurCmp = qwiic;
+IdModule  = halo:PinSocket_1x04_P2.54mm_Vertical_SMD_Pin1Left;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9D3F9F
+Path = /5FB76379
+Reference = B1;
+ValeurCmp = I_O;
+IdModule  = halo:breakout_smd;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9D3FA4
+Path = /5FB76FA4
+Reference = B2;
+ValeurCmp = I_O;
+IdModule  = halo:breakout_smd;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9D3FA9
+Path = /5FB6FA20
+Reference = B3;
+ValeurCmp = I_O;
+IdModule  = halo:breakout_smd;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9D3FAE
+Path = /5FB6FD44
+Reference = B4;
+ValeurCmp = I_O;
+IdModule  = halo:breakout_smd;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9D3FB3
+Path = /5FB700A8
+Reference = B5;
+ValeurCmp = I_O;
+IdModule  = halo:breakout_smd;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9D3FB8
+Path = /5FB702EA
+Reference = B6;
+ValeurCmp = I_O;
+IdModule  = halo:breakout_smd;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9D3FBD
+Path = /5FB7074B
+Reference = B7;
+ValeurCmp = I_O;
+IdModule  = halo:breakout_smd;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9D3FC2
+Path = /5FB70BFB
+Reference = B8;
+ValeurCmp = I_O;
+IdModule  = halo:breakout_smd;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9D3FC7
+Path = /5FB7106C
+Reference = B9;
+ValeurCmp = I_O;
+IdModule  = halo:breakout_smd;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9D3FCC
+Path = /5FB7149C
+Reference = B10;
+ValeurCmp = I_O;
+IdModule  = halo:breakout_smd;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9D3FD1
+Path = /5FB71757
+Reference = B11;
+ValeurCmp = I_O;
+IdModule  = halo:breakout_smd;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9D3FD6
+Path = /5FB71AB0
+Reference = B12;
+ValeurCmp = I_O;
+IdModule  = halo:breakout_smd;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9D3FDB
+Path = /5FB72915
+Reference = B13;
+ValeurCmp = I_O;
+IdModule  = halo:breakout_smd;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9D3FE0
+Path = /5FB72C8E
+Reference = B14;
+ValeurCmp = I_O;
+IdModule  = halo:breakout_smd;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9D3FE5
+Path = /5FB7380E
+Reference = B15;
+ValeurCmp = I_O;
+IdModule  = halo:breakout_smd;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9D3FEA
+Path = /5FB739D3
+Reference = B16;
+ValeurCmp = I_O;
+IdModule  = halo:breakout_smd;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9D3FEF
+Path = /5FB73CE4
+Reference = B17;
+ValeurCmp = I_O;
+IdModule  = halo:breakout_smd;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9D3FF4
+Path = /5FB74003
+Reference = B18;
+ValeurCmp = I_O;
+IdModule  = halo:breakout_smd;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9D3FF9
+Path = /5FB74315
+Reference = B19;
+ValeurCmp = I_O;
+IdModule  = halo:breakout_smd;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9DB6E1
+Path = /5FD196AC/5FF0D020
+Reference = B20;
+ValeurCmp = I_O;
+IdModule  = halo:breakout_smd;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9E15B0
+Path = /5FD196AC/5F9F5FA3
+Reference = C11;
+ValeurCmp = C_NPOL;
+IdModule  = halo:C_0805_2012Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9E23D7
+Path = /5FD196AC/5FA66E67
+Reference = C12;
+ValeurCmp = C_NPOL;
+IdModule  = halo:C_0805_2012Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9E15D2
+Path = /5FD196AC/5FA7D072
+Reference = C13;
+ValeurCmp = C_NPOL;
+IdModule  = halo:C_0805_2012Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9E15E3
+Path = /5FD196AC/5FA92C3D
+Reference = C14;
+ValeurCmp = C_NPOL;
+IdModule  = halo:C_0805_2012Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9E15F4
+Path = /5FD196AC/5FAAA6D4
+Reference = C15;
+ValeurCmp = C_NPOL;
+IdModule  = halo:C_0805_2012Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F8A7C
+Path = /5FD196AC/5FAC11F8
+Reference = C16;
+ValeurCmp = C_NPOL;
+IdModule  = halo:C_0805_2012Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F042F
+Path = /5FA144D9
+Reference = C1;
+ValeurCmp = 10uF;
+IdModule  = halo:CP_Elec_4x5.8;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0456
+Path = /4DCA7BAC
+Reference = C2;
+ValeurCmp = 100n;
+IdModule  = halo:C_0805_2012Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0466
+Path = /5FA12894
+Reference = C3;
+ValeurCmp = 1uF;
+IdModule  = halo:C_0805_2012Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0476
+Path = /5FA13A98
+Reference = C4;
+ValeurCmp = 1uF;
+IdModule  = halo:C_0805_2012Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0486
+Path = /4EC128EB
+Reference = C5;
+ValeurCmp = 22p;
+IdModule  = halo:C_0805_2012Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5FA08B7F
+Path = /4EC1290E
+Reference = C6;
+ValeurCmp = 22p;
+IdModule  = halo:C_0805_2012Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F04A6
+Path = /5FC21524
+Reference = C7;
+ValeurCmp = 10uF;
+IdModule  = halo:CP_Elec_4x5.8;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F04CD
+Path = /5FC23C74
+Reference = C8;
+ValeurCmp = 1uF;
+IdModule  = halo:C_0805_2012Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F04ED
+Path = /5FAFBE8C
+Reference = C10;
+ValeurCmp = 100n;
+IdModule  = halo:C_0805_2012Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F04FD
+Path = /5FD196AC/5FDA109E
+Reference = D2;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0514
+Path = /5FD196AC/5FDA2F3B
+Reference = D3;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F052B
+Path = /5FD196AC/5FDA5381
+Reference = D4;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0542
+Path = /5FD196AC/5FDA5387
+Reference = D5;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0559
+Path = /5FD196AC/5FDA5D73
+Reference = D6;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0570
+Path = /5FD196AC/5FDA5E23
+Reference = D7;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0587
+Path = /5FD196AC/5FDA5E2D
+Reference = D8;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F059E
+Path = /5FD196AC/5FDA5E37
+Reference = D9;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F05B5
+Path = /5FD196AC/5FDAD3A1
+Reference = D10;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F05CC
+Path = /5FD196AC/5FDAD4D9
+Reference = D11;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F05E3
+Path = /5FD196AC/5FE0848C
+Reference = D12;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F05FA
+Path = /5FD196AC/5FE08608
+Reference = D13;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0611
+Path = /5FD196AC/5FE08612
+Reference = D14;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0628
+Path = /5FD196AC/5FE0861C
+Reference = D15;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F063F
+Path = /5FD196AC/5FE08626
+Reference = D16;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0656
+Path = /5FD196AC/5FE08630
+Reference = D17;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F066D
+Path = /5FD196AC/5FE0863A
+Reference = D18;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0684
+Path = /5FD196AC/5FE08644
+Reference = D19;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F069B
+Path = /5FD196AC/5FE0864E
+Reference = D20;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F06B2
+Path = /5FD196AC/5FE08658
+Reference = D21;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F06C9
+Path = /5FD196AC/5FE1E88C
+Reference = D22;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F06E0
+Path = /5FD196AC/5FE1EB5C
+Reference = D23;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F06F7
+Path = /5FD196AC/5FE1EB66
+Reference = D24;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F070E
+Path = /5FD196AC/5FE1EB70
+Reference = D25;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0725
+Path = /5FD196AC/5FE1EB7A
+Reference = D26;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F073C
+Path = /5FD196AC/5FE1EB84
+Reference = D27;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0753
+Path = /5FD196AC/5FE1EB8E
+Reference = D28;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F076A
+Path = /5FD196AC/5FE1EB98
+Reference = D29;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0781
+Path = /5FD196AC/5FE1EBA2
+Reference = D30;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0798
+Path = /5FD196AC/5FE1EBAC
+Reference = D31;
+ValeurCmp = WS2812B;
+IdModule  = halo:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F07AF
+Path = /5FC67958
+Reference = D33;
+ValeurCmp = DIODESCH;
+IdModule  = halo:D_SMB-SMC_Universal_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9FF863
+Path = /5FC18E76
+Reference = D34;
+ValeurCmp = DIODESCH;
+IdModule  = halo:D_SMB-SMC_Universal_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F07E5
+Path = /5FC509B2
+Reference = D35;
+ValeurCmp = LED_PWR;
+IdModule  = halo:LED_0805_2012Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F07F7
+Path = /5FC97E86
+Reference = D36;
+ValeurCmp = LED_BLNK;
+IdModule  = halo:LED_0805_2012Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0809
+Path = /5FA5CA5B
+Reference = J1;
+ValeurCmp = USB_header;
+IdModule  = halo:PinSocket_1x08_P2.54mm_Vertical_SMD_Pin1Left;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9FF99B
+Path = /5FC18389
+Reference = J3;
+ValeurCmp = 12V_DC;
+IdModule  = halo:BarrelJack_CUI_PJ-036AH-SMT_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = 5FA00A48
+Path = /5FB9549F
+Reference = P1;
+ValeurCmp = LED;
+IdModule  = halo:PinSocket_1x04_P2.54mm_Vertical_SMD_Pin1Left;
+EndCmp
+
+BeginCmp
+TimeStamp = 5FA013E6
+Path = /4DCB971F
+Reference = P2;
+ValeurCmp = FTDI;
+IdModule  = halo:PinHeader_1x06_P2.54mm_Vertical_SMD_Pin1Left;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F08EB
+Path = /5FA38811
+Reference = P3;
+ValeurCmp = SPI;
+IdModule  = halo:PinHeader_2x03_P2.54mm_Vertical_SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F091B
+Path = /5FD196AC/5FF42D78
+Reference = P4;
+ValeurCmp = LED_OUT;
+IdModule  = halo:PinSocket_1x04_P2.54mm_Vertical_SMD_Pin1Left;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0951
+Path = /4DCAC161
+Reference = R2;
+ValeurCmp = 10k;
+IdModule  = halo:R_0805_2012Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0961
+Path = /4DCAC172
+Reference = R3;
+ValeurCmp = 10k;
+IdModule  = halo:R_0805_2012Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0971
+Path = /544EC93F
+Reference = R4;
+ValeurCmp = 10k;
+IdModule  = halo:R_0805_2012Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0981
+Path = /5FB69F7B
+Reference = R5;
+ValeurCmp = 5k11;
+IdModule  = halo:R_0805_2012Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0991
+Path = /5FB6AA87
+Reference = R6;
+ValeurCmp = 5k11;
+IdModule  = halo:R_0805_2012Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F09A1
+Path = /5FC49493
+Reference = R7;
+ValeurCmp = 1k;
+IdModule  = halo:R_0805_2012Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F09B1
+Path = /5FC97D54
+Reference = R8;
+ValeurCmp = 1k;
+IdModule  = halo:R_0805_2012Metric;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F09C1
+Path = /4DCCE748
+Reference = SC1;
+ValeurCmp = SCREW;
+IdModule  = halo:MountingHole_3.2mm_M3_Pad_Via;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F09D0
+Path = /544E7E14
+Reference = SC2;
+ValeurCmp = SCREW;
+IdModule  = halo:MountingHole_3.2mm_M3_Pad_Via;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F09DF
+Path = /542E814F
+Reference = SC3;
+ValeurCmp = SCREW;
+IdModule  = halo:MountingHole_3.2mm_M3_Pad_Via;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F09EE
+Path = /544E7E1A
+Reference = SC4;
+ValeurCmp = SCREW;
+IdModule  = halo:MountingHole_3.2mm_M3_Pad_Via;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F09FD
+Path = /542E815A
+Reference = SC5;
+ValeurCmp = SCREW;
+IdModule  = halo:MountingHole_3.2mm_M3_Pad_Via;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0A0C
+Path = /544E7E20
+Reference = SC6;
+ValeurCmp = SCREW;
+IdModule  = halo:MountingHole_3.2mm_M3_Pad_Via;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0A1B
+Path = /542E8165
+Reference = SC7;
+ValeurCmp = SCREW;
+IdModule  = halo:MountingHole_3.2mm_M3_Pad_Via;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0A2A
+Path = /544E7E26
+Reference = SC8;
+ValeurCmp = SCREW;
+IdModule  = halo:MountingHole_3.2mm_M3_Pad_Via;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0A39
+Path = /4DCA7D67
+Reference = SW1;
+ValeurCmp = RST;
+IdModule  = halo:SW_Push_1P1T_NO_6x6mm_H9.5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0A52
+Path = /544EC7EE
+Reference = SW2;
+ValeurCmp = MODE;
+IdModule  = halo:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0A6E
+Path = /4DCA5EC5
+Reference = U1;
+ValeurCmp = ATMEGA328;
+IdModule  = halo:TQFP-32_7x7mm_P0.8mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5F9F0AA4
+Path = /5FC20091
+Reference = U2;
+ValeurCmp = LM1117-5.0;
+IdModule  = halo:SOT-223-3_TabPin2;
+EndCmp
+
+BeginCmp
+TimeStamp = 5FA08089
+Path = /5313C3B2
+Reference = X1;
+ValeurCmp = 16MHz;
+IdModule  = halo:Crystal_SMD_3225-4Pin_3.2x2.5mm;
+EndCmp
+
+EndListe
