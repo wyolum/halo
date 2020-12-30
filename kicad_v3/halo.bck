@@ -1,0 +1,63 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 2N7000
+D 0.2A Id, 200V Vds, N-Channel MOSFET, 2.6V Logic Level, TO-92
+K N-Channel MOSFET Logic-Level
+F https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF
+$ENDCMP
+#
+$CMP Conn_01x05
+D Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP FDS6890A
+D 7.5A Id, 20V Vds, Dual N-Channel MOSFET, 18mOhm Ron, SO-8
+K Dual N-Channel MOSFET
+F https://www.onsemi.com/pub/Collateral/FDS6890A-D.PDF
+$ENDCMP
+#
+$CMP FDS6892A
+D 7.5A Id, 20V Vds, Dual N-Channel MOSFET PWM Optimized, 18mOhm Ron, SO-8
+K Dual N-Channel MOSFET Low Gate Charge
+F https://www.onsemi.com/pub/Collateral/FDS6892A-D.pdf
+$ENDCMP
+#
+$CMP FDS6898A
+D 9.4A Id, 20V Vds, Dual N-Channel MOSFET, 14mOhm Ron, SO-8
+K Dual N-Channel MOSFET
+F https://www.onsemi.com/pub/Collateral/FDS6898A-D.PDF
+$ENDCMP
+#
+$CMP FDS6930A
+D 5.5A Id, 30V Vds, Dual N-Channel Logic Level MOSFET, 40mOhm Ron, SO-8
+K Dual N-Channel MOSFET
+F http://www.onsemi.com/pub/Collateral/FDS6930A-D.PDF
+$ENDCMP
+#
+$CMP FDS6930B
+D 5.5A Id, 30V Vds, Dual N-Channel Logic Level MOSFET, 38mOhm Ron, SO-8
+K Dual N-Channel MOSFET
+F http://www.onsemi.com/pub/Collateral/FDS6930B-D.PDF
+$ENDCMP
+#
+$CMP FDS9926A
+D 6.5A Id, 20V Vds, Dual N-Channel MOSFET, 30mOhm Ron, SO-8
+K Dual N-Channel MOSFET
+F https://www.onsemi.com/pub/Collateral/FDS9926A-D.pdf
+$ENDCMP
+#
+$CMP Q_Dual_NMOS_S1G1D2S2G2D1
+D Dual NMOS transistor, 6 pin package
+K transistor NMOS N-MOS N-MOSFET
+F ~
+$ENDCMP
+#
+$CMP STS2DNE60
+D 2A Id, 60V Vds, Dual N-Channel MOSFET, 180mOhm Ron, SO-8
+K Dual N-Channel MOSFET
+F https://www.st.com/resource/en/datasheet/CD00001537.pdf
+$ENDCMP
+#
+#End Doc Library
