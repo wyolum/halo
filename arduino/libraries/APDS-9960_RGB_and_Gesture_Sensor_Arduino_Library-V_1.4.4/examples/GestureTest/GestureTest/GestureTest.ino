@@ -49,13 +49,13 @@ Distributed as-is; no warranty is given.
 #include <SparkFun_APDS9960.h>
 
 // Pins
-#define APDS9960_INT    2 // Needs to be an interrupt pin
+#define APDS9960_INT    13 // Needs to be an interrupt pin
 
 // Constants
 
 // Global Variables
 SparkFun_APDS9960 apds = SparkFun_APDS9960();
-int isr_flag = 0;
+volatile int isr_flag = 0;
 
 void setup() {
 
@@ -70,7 +70,7 @@ void setup() {
   Serial.println(F("--------------------------------"));
   
   // Initialize interrupt service routine
-  attachInterrupt(0, interruptRoutine, FALLING);
+  attachInterrupt(digitalPinToInterrupt(APDS9960_INT), interruptRoutine, FALLING);
 
   // Initialize APDS-9960 (configure I2C and initial values)
   if ( apds.init() ) {
@@ -88,7 +88,6 @@ void setup() {
 }
 
 void loop() {
-  handleGesture();
   if( isr_flag == 1 ) {
     detachInterrupt(0);
     handleGesture();
