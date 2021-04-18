@@ -1,5 +1,6 @@
 #include <DS3231.h>
 #include <Wire.h>
+#include <rtcBOB.h>
 #include <FastLED.h>
 #include <SparkFun_APDS9960.h>
 
@@ -14,6 +15,22 @@ FASTLED_USING_NAMESPACE
 // animations patterns and have them automatically rotate.
 //
 // -Mark Kriegsman, December 2014
+
+void setRTC_to_CompileTime(){
+
+  String t = __TIME__;
+  int hh = t.substring(0, 2).toInt();
+  int mm = t.substring(3, 5).toInt();
+  int ss = t.substring(6, 8).toInt();
+
+  
+  Serial.print("date: ");
+  Serial.println(__DATE__);
+  Serial.print("Setting time to : ");
+  Serial.println(t);
+  
+  setRTC(2021, 1, 1, hh, mm, ss);
+}
 
 #if defined(FASTLED_VERSION) && (FASTLED_VERSION < 3001000)
 #warning "Requires FastLED 3.1 or later; check github for latest code."
@@ -307,6 +324,8 @@ void setup() {
   //while(1)delay(100);
   //splash();
   //apds_setup();
+
+  setRTC_to_CompileTime();
   
 }
 
