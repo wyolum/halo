@@ -25,7 +25,7 @@ FASTLED_USING_NAMESPACE
 //#define LED_TYPE    APA102
 
 #define COLOR_ORDER GRB
-#define NUM_LEDS     32
+#define NUM_LEDS     64
 #define BUTTON_PIN    4
 CRGB leds[NUM_LEDS];
 
@@ -34,7 +34,7 @@ CRGB leds[NUM_LEDS];
 
 uint32_t last_press = 0;
 #define DEBOUNCE  200
-#define LONG_PRESS_DURATION 3000
+#define LONG_PRESS_DURATION 1000
 #define TIMEOUT (10L * 60L * 1000L)
 
 int8_t gCurrentPatternNumber = 0; // Index number of which pattern is current

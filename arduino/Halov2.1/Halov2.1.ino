@@ -31,6 +31,8 @@ FASTLED_USING_NAMESPACE
 int8_t gCurrentPatternNumber = 0; // Index number of which pattern is current
 int8_t gLastPatternNumber = 0; // Index number of which pattern is current
 uint8_t gHue = 0; // rotating "base color" used by many of the patterns
+
+CRGB fade_from_leds[NUM_LEDS];
 CRGB leds[NUM_LEDS];
 CRGB ledsFront[NUM_LEDS/2];
 CRGB ledsBack[NUM_LEDS/2];
@@ -58,6 +60,8 @@ void blue(CRGB *leds);
 void green(CRGB *leds);
 void red(CRGB *leds);
 void white(CRGB *leds);
+void black(CRGB *leds);
+void pink(CRGB *leds);
 void rainbow(CRGB *leds);
 void rainbowWithGlitter(CRGB *leds);
 void sinelon(CRGB *leds);
@@ -69,9 +73,10 @@ void setOff();
 void addGlitter(CRGB *leds,fract8 chanceOfGlitter);
 void apds_setup();
 
-SimplePatternList gPatterns = {blue, green, red, white,
-			       rainbow, rainbowWithGlitter, juggle, sinelon, bpm
-			       };
+SimplePatternList gPatterns = {blue, green, pink, white,
+			       rainbow};
+//, rainbowWithGlitter, juggle, sinelon, bpm};
+//SimplePatternList gPatterns = {white};
 
 
 uint32_t last_interaction = 0;
@@ -171,15 +176,16 @@ void my_show(){
   }
   FastLED.show();
 }
+
+
 // List of patterns to cycle through.  Each is defined as a separate function below.
-void loop()
-{
+void loop(){
 
   // Call the current pattern function once, updating the 'leds' array
   if(gCurrentPatternNumber >= 0){
-    gPatterns[gCurrentPatternNumber](ledsFront);
+    gPatterns[gCurrentPatternNumber](ledsBack);
   }
-  blue(ledsBack);
+  white(ledsFront);
   // send the 'leds' array out to the actual LED strip
   my_show();  
   // insert a delay to keep the framerate modest
@@ -199,17 +205,10 @@ void setOff(){
   gCurrentPatternNumber = -1;
 }
 void nextPattern(){
-  Serial.print("pattern: ");Serial.println(gCurrentPatternNumber);
-  Serial.print("lastpattern: ");Serial.println(gLastPatternNumber);
-  if(gCurrentPatternNumber < 0){
-    gCurrentPatternNumber = gLastPatternNumber;
-    Serial.println("next set to last");
-  }
-  else{
-    // add one to the current pattern number, and wrap around at the end
-    gCurrentPatternNumber = (gCurrentPatternNumber + 1) % ARRAY_SIZE( gPatterns);
-    Serial.print("incrementing pattern:");Serial.println(gCurrentPatternNumber);
-  }
+  // add one to the current pattern number, and wrap around at the end
+  gCurrentPatternNumber = (gCurrentPatternNumber + 1) % ARRAY_SIZE( gPatterns);
+
+  // fade in
 }
 
 void prevPattern(){
@@ -276,6 +275,16 @@ void red(CRGB *leds){
 void white(CRGB *leds){
   for(int i = 0; i < NUM_LEDS/2; i++){
     leds[i] = CRGB::White;
+  }
+}
+void black(CRGB *leds){
+  for(int i = 0; i < NUM_LEDS/2; i++){
+    leds[i] = CRGB::Black;
+  }
+}
+void pink(CRGB *leds){
+  for(int i = 0; i < NUM_LEDS/2; i++){
+    leds[i] = CRGB::Pink;
   }
 }
 void green(CRGB *leds){

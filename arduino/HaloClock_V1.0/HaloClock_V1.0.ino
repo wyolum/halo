@@ -96,8 +96,9 @@ void fill_white(){
   fill_solid(ledsBack, NUM_LEDS/2, CRGB::White);
 }
 
+bool dst = false;
 void splash(){
-  int hh = Clock.getHour(h12, PM);
+  int hh = Clock.getHour(h12, PM) + dst;
   int mm = Clock.getMinute();
   int steps_to_go = hh + (120 - mm)/5;
   int _delay = 75;
@@ -146,24 +147,8 @@ void interact(){
       Serial.read();
     }
   }
-  return;
-  int gesture = handleGesture();
-  if(gesture > 0){
-    last_interaction = millis();
-  }
-  if(gesture == APDS_UP){
-    nextPattern();
-    Serial.println("Next");
-  }
-  if(gesture == APDS_DOWN){
-    prevPattern();
-    Serial.println("Prev");
-  }
   if(millis() - last_press > DEBOUNCE && digitalRead(BUTTON_PIN) == LOW){
     Serial.println("thinks button pressed");
-    nextPattern();
-    gPatterns[gCurrentPatternNumber](ledsFront);
-    my_show();
     uint32_t press_start = millis();
     uint32_t press_dur = millis() - press_start;
     uint32_t attempt = 0;
@@ -185,15 +170,18 @@ void interact(){
     }
     else{
       Serial.println("normal press");
+      if(dst){
+	dst = false;
+      }
+      else{
+	dst = true;
+      }
+      splash();
     }
     last_press = millis();
     Serial.println("released");
   }
   if(millis() - last_interaction > TIMEOUT){
-    gCurrentPatternNumber++; // pre-increment (like button long press does)
-    setOff();
-    off();
-    my_show();
   }
   //Serial.print(millis() - last_interaction);
   //Serial.print(" ");
@@ -318,7 +306,7 @@ void setup() {
   //my_show();
   //while(1)delay(100);
   //splash();
-  apds_setup();
+  //apds_setup();
   
 }
 
