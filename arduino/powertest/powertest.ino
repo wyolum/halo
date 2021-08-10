@@ -25,7 +25,7 @@ FASTLED_USING_NAMESPACE
 //#define LED_TYPE    APA102
 
 #define COLOR_ORDER GRB
-#define NUM_LEDS     64
+#define NUM_LEDS     128
 #define BUTTON_PIN    4
 
 int8_t gCurrentPatternNumber = 0; // Index number of which pattern is current
@@ -35,7 +35,7 @@ CRGB leds[NUM_LEDS];
 CRGB ledsFront[NUM_LEDS/2];
 CRGB ledsBack[NUM_LEDS/2];
 
-#define BRIGHTNESS          255
+#define BRIGHTNESS          25
 #define FRAMES_PER_SECOND  120
 
 uint32_t last_press = 0;
@@ -167,7 +167,7 @@ void my_show(){
   // copy front and back arrays into main array.
   for (int i = 0; i < NUM_LEDS/2; i++){
     leds[maphalo2(i)] = ledsBack[i];
-    leds[maphalo2(i+32)]= ledsFront[i];
+    leds[maphalo2(i+NUM_LEDS/2)]= ledsFront[i];
   }
   FastLED.show();
 }

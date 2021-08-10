@@ -25,7 +25,7 @@ FASTLED_USING_NAMESPACE
 //#define LED_TYPE    APA102
 
 #define COLOR_ORDER GRB
-#define NUM_LEDS     64
+#define NUM_LEDS     128
 #define BUTTON_PIN    4
 
 int8_t gCurrentPatternNumber = 0; // Index number of which pattern is current
@@ -37,12 +37,12 @@ CRGB leds[NUM_LEDS];
 CRGB ledsFront[NUM_LEDS/2];
 CRGB ledsBack[NUM_LEDS/2];
 
-#define BRIGHTNESS          255
+#define BRIGHTNESS         55
 #define FRAMES_PER_SECOND  120
 
 uint32_t last_press = 0;
 #define DEBOUNCE  200
-#define LONG_PRESS_DURATION 3000
+#define LONG_PRESS_DURATION 1000
 #define TIMEOUT (10L * 60L * 1000L)
 
 const int    APDS_UP = 1;
@@ -81,9 +81,9 @@ SimplePatternList gPatterns = {blue, green, pink, white,
 
 uint32_t last_interaction = 0;
 int maphalo2(int i){
-  if (i < 32)
-    return(i*2 + i%2);
-  return (i-32)*2+!(i%2);
+  if (i < NUM_LEDS / 2)
+    return(i * 2 + i % 2);
+  return (i - NUM_LEDS / 2) * 2 +! (i % 2);
 }
 void interact(){
   int gesture = handleGesture();
@@ -116,7 +116,7 @@ void interact(){
     if(press_dur >= LONG_PRESS_DURATION){
       setOff();
       off();
-      my_show();
+      //my_show();
       Serial.println("Long Press");
       while(digitalRead(BUTTON_PIN) == LOW){
 	// insure release
@@ -152,7 +152,7 @@ void setup() {
   FastLED.setBrightness(BRIGHTNESS);
   pinMode(BUTTON_PIN, INPUT);
 
-  apds_setup();  
+  //apds_setup();  
 }
 
 // this routine hasn't been modified for dual strip **kgo
@@ -172,7 +172,7 @@ void my_show(){
   // copy front and back arrays into main array.
   for (int i = 0; i < NUM_LEDS/2; i++){
     leds[maphalo2(i)] = ledsBack[i];
-    leds[maphalo2(i+32)]= ledsFront[i];
+    leds[maphalo2(i+NUM_LEDS/2)]= ledsFront[i];
   }
   FastLED.show();
 }
@@ -183,18 +183,29 @@ void loop(){
 
   // Call the current pattern function once, updating the 'leds' array
   if(gCurrentPatternNumber >= 0){
-    gPatterns[gCurrentPatternNumber](ledsBack);
+    gPatterns[gCurrentPatternNumber](ledsFront);
+    blue(ledsBack);
+    ledsFront[0] = CRGB::Black;
+    ledsFront[1] = CRGB::Black;
+    ledsFront[NUM_LEDS/2 - 1] = CRGB::Black;
+    ledsFront[NUM_LEDS/2 - 2] = CRGB::Black;
+    ledsBack[0] = CRGB::Black;
+    ledsBack[1] = CRGB::Black;
+    ledsBack[NUM_LEDS/2 - 1] = CRGB::Black;
+    ledsBack[NUM_LEDS/2 - 2] = CRGB::Black;
+    // send the 'leds' array out to the actual LED strip
+    // insert a delay to keep the framerate modest
+    FastLED.delay(1000/FRAMES_PER_SECOND); 
   }
-  white(ledsFront);
-  // send the 'leds' array out to the actual LED strip
+  else{
+    black(ledsFront);
+    black(ledsBack);
+  }
   my_show();  
-  // insert a delay to keep the framerate modest
-  FastLED.delay(1000/FRAMES_PER_SECOND); 
-
   // do some periodic updates
   EVERY_N_MILLISECONDS( 20 ) { gHue++; } // slowly cycle the "base color" through the rainbow
-  EVERY_N_SECONDS( 10 ) { nextPattern(); } // change patterns periodically
-  //interact();
+  //EVERY_N_SECONDS( 10 ) { nextPattern(); } // change patterns periodically
+  interact();
 }
 
 #define ARRAY_SIZE(A) (sizeof(A) / sizeof((A)[0]))
@@ -231,7 +242,7 @@ int pattern_cycle_num = 0;
 int hue = 0;
 int divisor = 30;
 #define MIN_BRIGHTNESS 8
-#define MAX_BRIGHTNESS 255
+#define MAX_BRIGHTNESS 25
 void breath () {
  float breath = (exp(sin(millis()/5000.0*PI)) - 0.36787944)*108.0;
  breath = map(breath, 0, 255, MIN_BRIGHTNESS, MAX_BRIGHTNESS);
